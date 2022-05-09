@@ -7,7 +7,7 @@ var currWidth = selectionDim.clientWidth;
 var posOne = document.getElementById("fillerOne").style.left;
 
 relocate();
-menu();
+
 window.addEventListener('resize', relocate);
 
 function relocate() {
@@ -19,10 +19,4 @@ function relocate() {
     document.getElementById("fillerOne").style.marginLeft= (`-${currWidth}px`);
     document.getElementById("fillerTwo").style.marginLeft = (`-${currWidth}px`);
     document.getElementById("fillerThree").style.marginLeft = (`-${currWidth}px`);
-}
-
-function menu() {
-    
-    document.getElementById("infoOne").appendChild("#fillerOne");
-
 }
